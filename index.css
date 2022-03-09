@@ -1,0 +1,385 @@
+html,
+body {
+  overflow: auto;
+  min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.container {
+  height: 100%;
+}
+.grid-template {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 5%;
+}
+.attribution {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  padding: 0.5rem;
+  border: 2px transparent;
+  border-radius: 0.6rem;
+  text-align: left;
+}
+.profile {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.profile > img {
+  height: 1.7rem;
+  border-radius: 50%;
+}
+.profile div {
+  margin-left: 1vw;
+}
+.profile div h3 {
+  margin: 0;
+  text-align: left;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.profile div h5 {
+  margin: 0;
+  text-align: left;
+  line-height: 1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.card > h2 {
+  text-align: left;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+}
+.card > h6 {
+  text-align: left;
+  line-height: 1.2rem;
+  margin-left: 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+#daniel-card {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-color: hsl(263, 55%, 52%);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+#daniel-card .profile h3 {
+  color: white;
+}
+#daniel-card .profile h5 {
+  color: rgba(255, 255, 255, 0.5);
+}
+#daniel {
+  border: solid 0.12rem rgba(255, 255, 255, 0.5);
+}
+#daniel-card h2 {
+  color: white;
+  margin-right: 10rem;
+}
+#daniel-card h6 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10rem;
+}
+
+#jonathan-card {
+  grid-row: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: hsl(217, 19%, 35%);
+}
+#jonathan {
+  border: solid 0.12rem transparent;
+}
+#jonathan-card .profile h3 {
+  color: white;
+}
+#jonathan-card .profile h5 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#jonathan-card h2 {
+  color: white;
+  margin-right: 6rem;
+}
+#jonathan-card h6 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 6rem;
+}
+
+#jeanette-card {
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: white;
+}
+#jeanette {
+  border: solid 0.12rem transparent;
+}
+#jeanette-card h2 {
+  color: hsl(217, 19%, 35%);
+  margin-right: 8rem;
+}
+#jeanette-card h6 {
+  color: hsl(217, 19%, 70%);
+  margin-right: 5rem;
+}
+#jeanette-card .profile h3 {
+  color: hsl(217, 19%, 35%);
+}
+#jeanette-card .profile h5 {
+  color: hsl(217, 19%, 50%);
+}
+#patrick-card {
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+#patrick {
+  border: solid 0.12rem hsl(263, 55%, 52%);
+}
+
+#patrick-card .profile h3 {
+  color: white;
+}
+#patrick-card .profile h5 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#patrick-card h2 {
+  color: white;
+  margin-right: 6rem;
+}
+#patrick-card h6 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 6rem;
+}
+#kira-card {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: white;
+}
+#kira {
+  border: solid 0.12rem transparent;
+}
+
+#kira-card .profile h3 {
+  color: hsl(217, 19%, 35%);
+}
+#kira-card .profile h5 {
+  color: hsl(217, 19%, 50%);
+}
+
+#kira-card h2 {
+  color: hsl(217, 19%, 35%);
+  margin-right: 6rem;
+}
+#kira-card h6 {
+  color: hsl(217, 19%, 70%);
+  margin-right: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .grid-template {
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0;
+  }
+  #daniel-card {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-color: hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+  }
+
+  #jonathan-card {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  #jeanette-card {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+  }
+  #patrick-card {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+  }
+  #kira-card {
+    grid-row: 5;
+    grid-column: 1;
+    background-color: white;
+  }
+  .profile div h3 {
+    font-size: 1rem;
+  }
+  .profile div h5 {
+    font-size: 0.8rem;
+  }
+  .card > h2 {
+    font-size: 1.7rem;
+  }
+  .card > h6 {
+    font-size: 1.3rem;
+  }
+  #daniel-card h2 {
+    margin-right: 2rem;
+  }
+  #daniel-card h6 {
+    margin-right: 2rem;
+  }
+
+  #jonathan-card h2 {
+    margin-right: 2rem;
+  }
+  #jonathan-card h6 {
+    margin-right: 2rem;
+  }
+  #jeanette-card h2 {
+    margin-right: 2rem;
+  }
+  #jeanette-card h6 {
+    margin-right: 2rem;
+  }
+  #patrick-card h2 {
+    margin-right: 2rem;
+  }
+  #patrick-card h6 {
+    margin-right: 2rem;
+  }
+  #kira-card h2 {
+    margin-right: 2rem;
+  }
+  #kira-card h6 {
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .grid-template {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card > h2 {
+    font-size: 1.2rem;
+  }
+  .card > h6 {
+    font-size: 0.6rem;
+  }
+  #daniel-card h2 {
+    margin-right: 1rem;
+  }
+  #daniel-card h6 {
+    margin-right: 1rem;
+  }
+
+  #jonathan-card h2 {
+    margin-right: 1rem;
+  }
+  #jonathan-card h6 {
+    margin-right: 1rem;
+  }
+  #jeanette-card h2 {
+    margin-right: 1rem;
+  }
+  #jeanette-card h6 {
+    margin-right: 1rem;
+  }
+  #patrick-card h2 {
+    margin-right: 1rem;
+  }
+  #patrick-card h6 {
+    margin-right: 1rem;
+  }
+  #kira-card h2 {
+    margin-right: 1rem;
+  }
+  #kira-card h6 {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 4000px) and (min-width: 1921px) {
+  .profile div h3 {
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+  }
+  .profile div h5 {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+  .profile > img {
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .card > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .card > h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #daniel-card h2 {
+    margin-right: 2rem;
+  }
+  #daniel-card h6 {
+    margin-right: 2rem;
+  }
+
+  #jonathan-card h2 {
+    margin-right: 2rem;
+  }
+  #jonathan-card h6 {
+    margin-right: 2rem;
+  }
+  #jeanette-card h2 {
+    margin-right: 2rem;
+  }
+  #jeanette-card h6 {
+    margin-right: 2rem;
+  }
+  #patrick-card h2 {
+    margin-right: 2rem;
+  }
+  #patrick-card h6 {
+    margin-right: 2rem;
+  }
+  #kira-card h2 {
+    margin-right: 2rem;
+  }
+  #kira-card h6 {
+    margin-right: 2rem;
+  }
+}
